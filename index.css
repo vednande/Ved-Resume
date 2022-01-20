@@ -1,0 +1,717 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-repeat: repeat-y;
+    background-image: linear-gradient(to right,#de74de,lightblue);
+}
+hr{
+    height: 5px;
+    background-color: black;
+}
+header{
+    margin: 45px 20px;
+    text-align: center;
+    padding: 10px 5px;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+}
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 10rem;
+    width: 80%;
+    position: relative;
+    height: 90rem;
+    background-color: white;
+    border-radius: 25px;
+}
+.container{
+    padding: 20px;
+    display: flex;
+    position: relative;
+    height: 1480px;
+    width: 100%;
+}
+.container1{
+    width: 25%;
+    display: block;
+    margin: 10px;
+    padding: 20px;
+    height: 1400px;
+}
+.container2{
+    width: 70%;
+    /* border-left: 2px solid black; */
+    display: block;
+    margin: 10px;
+    padding: 20px;
+    height: 1400px;
+}
+.photo{
+    text-align: center;
+}
+.photo img{
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.contact img{
+    object-fit: cover;
+}
+.contact ul{
+    list-style-type: none;
+    font-size: 16px;
+    line-height: 25px;
+}
+.contact{
+    margin: 30px 5px;
+    line-height: 30px;
+}
+.contact a{
+    text-decoration: none;
+}
+.contact a:hover{
+    color: black;
+    /* font-weight: bolder; */
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+.skills{
+    margin: 30px 5px;
+    line-height: 30px;
+}
+.techskills{
+    margin: 30px 5px;
+    line-height: 30px;
+}
+.languages{
+    margin: 30px 5px;
+    line-height: 30px;
+}
+.interest{
+    margin: 30px 5px;
+    line-height: 30px;
+}
+.title{
+    background-color: rgb(230, 241, 74);
+    height: 150px;
+    margin: 20px 20px;
+    padding: 25px 25px;
+    line-height: 36px;
+    font-size: 22px;
+}
+.education{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    line-height: 30px;
+    margin: 5px 0px;
+}
+.techskills-container2{
+    margin: 30px 0px;
+}
+.experience{
+    margin: -20px 0px;
+    line-height: 25px;
+}
+.techskills-container2{
+    line-height: 25px;
+}
+.certificates{
+    line-height: 25px;
+}
+.college{
+    /* background-color: red; */
+    line-height: 30px;
+    height: 160px;
+}
+.twelth{
+    /* background-color: blue; */
+    line-height: 30px;
+    height: 160px;
+}
+.tenth{
+    /* background-color: purple; */
+    line-height: 30px;
+    height: 150px;
+}
+.certificates{ 
+    margin: 5px 0px;
+}
+.certificates a{
+    text-decoration: none;
+}
+.certificates a:hover{
+    color: orange;
+    /* transform: rotateX(120deg); */
+    transition: 0.4s;
+} 
+.achievements{
+    margin: 5px 0px;
+    line-height: 25px;
+}
+.footer{
+    background-color: black;
+    height: 250px;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+}
+.footer-flex{
+    padding: 30px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 4rem;
+    align-items: center;
+    /* background-color: lightgreen; */
+    margin: 20px 0px;
+    height: 100px;
+}
+
+/* Media Query */
+
+@media (min-width: 800px) and (max-width: 1314px) {
+    .college{
+        height: 190px;
+    }
+    .photo img{
+        object-fit: cover;
+        width: 166px;
+        height: 175px;
+        border-radius: 50%;
+    }
+    .twelth{
+        height: 135px;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1074px) {
+    .title h4{
+        font-size: 19px;
+    }
+    .photo img {
+        object-fit: cover;
+        width: 166px;
+        height: 175px;
+        border-radius: 50%;
+    }
+    .twelth{
+        height: 135px;
+    }
+}
+
+@media (min-width: 950px) and (max-width: 1000px) {
+    main{
+        margin: 1rem 7rem;
+    }
+    .title h4 {
+        font-size: 17px;
+        padding: 0px 0px;
+        width: 400px;
+    }
+    .title{
+        background-color: rgb(230, 241, 74);
+        width: 400px;
+    }   
+    .twelth{
+        height: 135px;
+    }
+}
+
+@media (min-width: 916px) and (max-width: 950px) {
+    main{
+        margin: 1rem 7rem;
+    }
+    .title h4 {
+        font-size: 17px;
+        padding: 0px 0px;
+        width: 400px;
+    }
+    .title{
+        background-color: rgb(230, 241, 74);
+        width: 400px;
+    }   
+    .twelth{
+        height: 135px;
+    }
+    /* .container1{
+        margin: 0px 10px;
+    }
+    .container2{
+        margin: 0px 0px;
+    } */
+} 
+
+@media (min-width: 800px) and (max-width: 916px) {
+    main{
+        margin: 1rem 7rem;
+    }
+    .title h4 {
+        font-size: 16px;
+        padding: 0px 0px;
+        width: 400px;
+    }
+    .container1{
+        margin: 22px 5px;
+        padding: 15px 10px;
+        width: 30%;
+    }
+    .container2{
+        margin: 0px 5px;
+        padding: 15px 10px;
+    }
+    .photo img {
+        object-fit: cover;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 800px) {
+    main{
+        margin: 1rem 7rem;
+        height: 411vh;
+    }
+    .title {
+        background-color: rgb(230, 241, 74);
+        height: 150px;
+        margin: 15px 10px;
+        padding: 25px 25px;
+        line-height: 36px;
+        font-size: 22px;
+    }
+    .title h4 {
+        font-size: 15px;
+        padding: 0px 0px;
+        width: 400px;
+    }
+    .container1{
+        margin: 22px 5px;
+        padding: 15px 10px;
+        width: 30%;
+    }
+    .container2{
+        margin: 0px 5px;
+        padding: 15px 10px;
+    }
+    .photo img {
+        object-fit: cover;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    .college {
+        /* background-color: red; */
+        line-height: 30px;
+        height: 187px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 750px){
+    main{
+        margin: 1rem 5rem;
+        height: 200rem;
+    }
+    .container{ 
+        display: block; 
+        height: 3110px;
+    }
+    .container1{
+        width: 100%;
+    }
+    .container2{
+        margin: -80px 68px;
+    }
+    .education , .experience , .techskills-container2 , .certificates , .achievements{
+        margin: 5px -45px;
+        /* height: 300px; */
+    }
+    .experience{
+        height: 300px;
+    }
+    .techskills-container2{
+        height: 210px;
+    }
+    .certificates{
+        height: 145px;
+    }
+    .college {
+        /* background-color: red; */
+        line-height: 30px;
+        height: 218px;
+    }
+    .twelth {
+        /* background-color: blue; */
+        line-height: 30px;
+        height: 145px;
+    }
+    .title {
+        background-color: rgb(230, 241, 74);
+        height: 150px;
+        margin: 20px -55px;
+        padding: 25px 25px;
+        line-height: 36px;
+        font-size: 22px;
+        width: 492px;
+    }
+    .footer{
+        display: block;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 700px) {
+    .container2{
+        margin: -100px 50px;
+    }
+    .college {
+        /* background-color: red; */
+        line-height: 30px;
+        height: 237px;
+    }
+    .title {
+        background-color: rgb(230, 241, 74);
+        height: 150px;
+        margin: 20px -55px;
+        padding: 20px 5px;
+        line-height: 32px;
+        font-size: 20px;
+        width: 445px;
+    }
+}
+
+/* @media (min-width: 500px) and (max-width: 600px) {
+    .container{
+        display: block;
+        height: 3095px;
+    } 
+    main {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 4rem;
+        width: 80%;
+        position: relative; 
+        height: 775vh;
+        background-color: white;
+        border-radius: 25px; 
+    }
+    .container{  
+        display: block; 
+        height: 4795px;
+    }
+    .container1{
+        height: 1589px;
+    }
+    .container2{
+        margin: -100px 80px;
+    }
+    .photo img {
+        object-fit: cover;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin: 0px 60px;
+    }
+    .title {
+        background-color: rgb(230, 241, 74);
+        height: 182px;
+        margin: 20px -120px;
+        padding: 25px 25px;
+        line-height: 35px;
+        font-size: 22px;
+        width: 473px;
+    }
+    .education {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        line-height: 30px;
+        margin: 5px -75px;
+    }
+    .experience {
+        margin: -20px -75px;
+        line-height: 25px;
+    }
+    .techskills-container2 {
+        margin: 25px -75px;
+        line-height: 25px;
+    }
+    .certificates {
+        margin: 5px -75px;
+    }
+    .achievements{
+        margin: 5px -75px;
+    }
+    .college {
+        line-height: 30px;
+        height: 218px;
+    }
+    .twelth {
+        line-height: 30px;
+        height: 145px;
+    }
+    .footer{
+        display: block;
+    }
+}
+*/ 
+@media (min-width: 501px) and (max-width: 600px) {
+    hr{
+        width: 80%;
+    }
+    main {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 3rem;
+        width: 84%;
+        position: relative;
+        height: 412vh;
+        /* height: 813vh; */
+        /* height: 411vh; */
+        /* height: 446vh; */
+        background-color: white;
+        border-radius: 25px;
+    }
+    .title {
+        background-color: rgb(230, 241, 74);
+        height: 182px;
+        margin: 20px -30px;
+        padding: 25px 25px;
+        line-height: 35px;
+        font-size: 22px;
+        width: 397px;
+    }
+    .container{
+        display: block;
+        height: 3050px;
+    }
+    .container1{
+        width: 78vw;
+        margin: 0px -10px;
+    }
+    .container1 {
+        height: 1367px;
+    }
+    .photo img {
+        object-fit: cover;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin: 0px 128px;
+    }
+    .photo {
+        text-align: center;
+        width: 385px;
+    }
+    .college{
+        height: 254px;
+    }
+    .twelth{
+        height: 133px;
+    }
+    .education {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        line-height: 30px;
+        margin: 5px -100px;
+        margin: 20px -30px;
+    }
+    .experience{
+        margin: 20px -30px;
+    }
+    .techskills-container2 , .certificates , .achievements{
+        margin: 5px -100px;
+        margin: 20px -30px;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 500px) {
+    hr{
+        width: 80%;
+    }
+    main {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 2rem;
+        width: 84%;
+        position: relative;
+        height: 434vh;
+        /* height: 880vh; */
+        /* height: 500vh; */
+        background-color: white;
+        border-radius: 25px;
+    }
+    .container{
+        display: block;
+        height: 3095px;
+        height: 3263px;
+    }
+    .container1{
+        /* height: 1500px; */
+        height: 1235px;
+        width: 300px; 
+    }
+    .title {
+        background-color: rgb(230, 241, 74);
+        height: 217px;
+        margin: 30px -20px;
+        padding: 25px 25px;
+        line-height: 35px;
+        font-size: 22px;
+        width: 304px;
+    }
+    .education, .experience, .techskills-container2, .certificates, .achievements {
+        /* display: grid; */
+        margin: 30px -15px;
+    }
+    .college {
+        /* background-color: red; */
+        line-height: 30px;
+        height: 272px;
+    }
+    .twelth{
+        height: 130px; 
+    }
+    .experience{
+        margin: 30px -15px;
+    }
+    .techskills-container2 , .certificates , .achievements{
+        margin: 30px -15px;
+    }
+}
+ 
+@media (min-width: 300px) and (max-width: 400px){
+    hr{
+        width: 80%;
+    }
+    main {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 2rem;
+        width: 84%;
+        position: relative;
+        /* height: 880vh; */
+        height: 429vh;
+        background-color: white;
+        border-radius: 25px;
+    }
+    .container{
+        display: block;
+        height: 3095px;
+    }
+    .container1{
+        /* height: 1500px; */
+        height: 1250px;
+        width: 300px; 
+    }
+    .container1 {
+        /* height: 1500px; */
+        height: 1250px;
+        margin: 0px -44px;
+        width: 300px;
+    }
+    .contact, .skills, .skills, .techskills, .languages, .interest {
+        margin: 30px 15px;
+        line-height: 30px;
+    }
+    .title {
+        background-color: rgb(230, 241, 74);
+        height: 252px;
+        margin: 0px -42px;
+        padding: 25px 25px;
+        line-height: 36px;
+        font-size: 18px;
+    }
+    .education {
+        /* display: grid; */
+        /* grid-template-columns: auto; */
+        /* grid-template-rows: auto auto auto; */
+        line-height: 30px;
+        width: 264px;
+        margin: 14px -38px;
+    }
+    .college {
+        /* background-color: red; */
+        line-height: 30px;
+        height: 243px;
+    }
+    .twelth {
+        /* background-color: blue; */
+        line-height: 30px;
+        height: 160px;
+    }
+    .tenth {
+        /* background-color: purple; */
+        line-height: 30px;
+        height: 150px;
+    }
+    .experience {
+        margin: -20px -37px;
+        line-height: 25px;
+    }
+    .techskills-container2 {
+        line-height: 25px;
+        margin: 31px -37px;
+    }
+    .certificates {
+        margin: 5px -35px;
+    }
+    .achievements {
+        margin: 5px -32px;
+        line-height: 25px;
+    }
+}
+
+/* My Mobile */
+
+/* @media screen and (max-width: 412px) {
+    main {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 3rem;
+        width: 84%;
+        position: relative;
+        height: 362vh;
+        background-color: white;
+        border-radius: 25px;
+    }
+    .container{
+        height: 1148px;
+    }
+    .contact{
+        margin: 30px -18px;
+        line-height: 30px;
+        width: 200px;
+    }
+    .skills{
+        width: 200px;
+        margin: 0px -20px;
+    }
+    .techskills{
+        width: 200px;
+        margin: 0px -20px;
+    }
+    .languages{
+        width: 200px;
+        margin: 0px -20px;
+    }
+    .certificates{
+        width: 200px;
+        margin: 0px -20px;
+    }
+    .interest{
+        width: 200px;
+        margin: 0px -20px;
+    }
+} */
